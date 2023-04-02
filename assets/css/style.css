@@ -4,11 +4,11 @@ h1 {
     font-size: 70px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 45px;
+    margin-bottom: 45px;
 }
 
-#navbar{
+header{
     background-color: rgb(100, 157, 180);
     top: 0;
     width: 100%;
@@ -36,12 +36,12 @@ footer a:hover{
 main a:hover{
     color: rgb(100, 157, 180) ;
 }
-p a{
-    color: rgb(100, 157, 180)
+
+#child img:hover{
+    opacity: 0.2;
 }
-p a:hover{
-    color:black
-}
+
+
 a, a:active {
     color: inherit;
     text-decoration: none;
@@ -52,36 +52,53 @@ ul{
     padding: 0;
 }
 
-
-.container {
+.about{
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    padding-bottom: 20px;
+    font-size: 30px;
+    display: flex;
+    height: fit-content;
+    width: 60%;
+    align-items: center;
+   
+}
+
+main {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
+
+.container{
+    box-sizing: border-box;
+    border-width: 1px;
+    padding: 40px;
+    width: 50%;
+    text-align: center;
+}
+#child{
+    width: 100%;
+    text-align: center;
+
+}
+#child img{
+    opacity: 0.5;
+}
+
+
 h2 {
     position: relative;
     bottom: 20px;
     right: 20px;
-    font-size: 50px;
+    font-size: 40px;
     padding-top: 25px;
+    text-align: center;
   }
-
-aside{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 70px;
-    flex: 1;
-    padding: 10px;
-    margin-top: 100px;
-    position: fixed;
-    font-size: 20px;
-    text-align: justify;
-    width: 400px;
-
-}
-
-
 
 h3{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -118,18 +135,104 @@ footer a{
     color: white;
 }
 
+@media screen and (max-width: 576px) {
+    main{
+        flex-direction: column;
+     
+    }
+    .container{
+        width: fit-content;
+        width: 100%;
+        text-align: center;
+    }
 
+    #child{
+        width: fit-content;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .about{
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+    }
+   
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    footer ul{
+        flex-direction: column;
+        text-align: center;
+
+    }
+  }
+  
+    
   @media screen and (max-width: 768px) {
     main{
         flex-direction: column;
+     
     }
+    .container{
+        width: fit-content;
+        width: 100%;
+        text-align: center;
+    }
+
+    #child{
+        width: fit-content;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .about{
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+    }
+   
     nav ul{
         flex-direction: column;
         text-align: right;
     }
-    aside {
-        order:5;
-      }
+  
+    footer ul{
+        flex-direction: column;
+        text-align: right;
+
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    main{
+        flex-direction: column;
+     
+    }
+    .container{
+        width: fit-content;
+        width: 100%;
+        text-align: center;
+    }
+
+    #child{
+        width: fit-content;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .about{
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+    }
+   
+    nav ul{
+        flex-direction: column;
+        text-align: right;
+    }
+  
     footer ul{
         flex-direction: column;
         text-align: right;
