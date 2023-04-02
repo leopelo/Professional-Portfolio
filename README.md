@@ -13,7 +13,8 @@ N/A
 Here is the layout of the website:
 ![Screenshot (1)](https://user-images.githubusercontent.com/127148387/229373831-2d1c5388-76da-4ae1-b4d6-ec7e4a857d1b.png)
 
-Together with a link to access it. You can click either the images or the title of the works in order to access them.
+Together with a link to access it: https://leopelo.github.io/Professional-Portfolio/ 
+You can click either the images or the title of the works in order to access them.
 ## Credits
 
 N/A
